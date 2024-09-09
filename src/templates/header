@@ -18,6 +18,11 @@
         <a class="navbar-button" href="index.html">Home</a>
         <a class="navbar-button" href="projects.html">Projects</a>
         <a class="navbar-button" href="blog.html">Blog</a>
+        <a target="_blank" 
+        class="navbar-button" 
+        href="resume.pdf" 
+        download="pdf"
+        >Resume</a>
       </div>
     </header>
     <main class="parent border">

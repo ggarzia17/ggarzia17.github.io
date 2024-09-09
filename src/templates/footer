@@ -4,9 +4,14 @@
       <a target="_blank" class="footer-anchor" href="https://www.linkedin.com/in/gavingarzia/">
         <img class="footer-img" src="./assets/linkedin.png"/>
       </a>
-      <a target="_blank" href="https://github.com/ggarzia17">
+      <a target="_blank" class="footer-anchor" href="https://github.com/ggarzia17">
         <img class="footer-img" class="footer-anchor" src="./assets/github.png"/>
       </a>
+      <a target="_blank" 
+        class="footer-button" 
+        href="resume.pdf" 
+        download="pdf"
+        >Resume</a>
     </footer>
   </body>
 </html>

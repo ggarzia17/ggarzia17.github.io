@@ -1,7 +1,15 @@
 #!/bin/bash
 
+#get resume file
+cp ../../latex/resume/resume.pdf .
+
+#index
+cd src
+cat templates/header index.html templates/footer > ../index.html
+
+
 # posts
-cd src/posts
+cd posts
 
 for file in ./*; do
     # get title of file and create blog post html file

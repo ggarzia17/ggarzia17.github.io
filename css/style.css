@@ -42,16 +42,24 @@ body {
 }
 
 .footer-img {
-    max-width: 25px;
+    max-width: 20px;
 }
 
 .footer-anchor {
     text-decoration: none;
-    margin: 2%;
+    margin: 1.5%;
 }
 
 .sourceCode {
     background-color: var(--back-color);
     border-radius: 10px;
     border-color: black;
+}
+
+footer {
+    text-align: center;
+}
+
+.footer-text {
+    margin: .5% 0 0 0;
 }

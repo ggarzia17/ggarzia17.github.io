@@ -12,6 +12,8 @@ code[class*=language-],pre[class*=language-]{color:#fff;background:0 0;text-shad
 
 p {
     break-inside: avoid;
+    line-height: 1.75;
+    font-size: 14px;
 }
 
 body {

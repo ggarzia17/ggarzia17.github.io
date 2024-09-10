@@ -78,5 +78,10 @@ footer {
 
 .project-div {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+}
+
+.project-img {
+    flex-wrap: wrap;
+    margin: 10px;
 }

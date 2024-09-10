@@ -77,11 +77,20 @@ footer {
 }
 
 .project-div {
-    display: flex;
-    flex-direction: row-reverse;
+    display: table;
 }
 
+.project-div img {
+    margin-bottom: 100px;
+    margin: 5px;
+    float: right;
+}
 .project-img {
-    flex-wrap: wrap;
-    margin: 10px;
+    width: 300px; 
+    height: 380px;
+    object-fit: contain;
+}
+
+.project-p {
+    min-width: 300px;
 }

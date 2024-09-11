@@ -24,8 +24,7 @@ for file in `ls | sort -k9`; do
 done
 
 cd ../projects
-
-for file in `ls | sort -k9`; do
+for file in `ls | sort -k9  -r`; do
     cat $file >> ../../projects.tmp
 done
 

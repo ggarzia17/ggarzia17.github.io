@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gavin Garzia</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="./src/js/prism.js"></script>
+
+  </head>
+  <body>
+    <header class="parent header">
+      <h1>Gavin Garzia</h1>
+      <h4>Computer Science Student</h4>
+      <div class="navbar">
+        <a class="navbar-button" href="index.html">Home</a>
+        <!-- <a class="navbar-button" href="work.html">Work Experience</a> -->
+        <a class="navbar-button" href="projects.html">Projects</a>
+        <a class="navbar-button" href="blog.html">Blog</a>
+        <a target="_blank" 
+          class="navbar-button" 
+          href="resume.pdf" 
+          title="Gavin Garzia's Resume"
+          >Resume</a>
+      </div>
+    </header>
+    <main class="parent border">
+        <div class="project-div">
+    <img class="project-img" src="./assets/clue.png">
+    <h3>Clue</h3>
+    <h4>May 2024</h4>
+    <p class="project-p">
+        This project was created as a group project for Software Engineering (CSCI306).
+        The game logic was built in Java and the GUI was created using the Java Swing framework.
+        The game features all of the major rules of clue. 
+        One of the more interesting to implement was moving a player when another player made a suggestion including them, and then updating their valid moves accordingly.
+        For example if you end a turn in a room you are not allowed to guess there again unless you were moved there by another player.
+        In addition to this we utilized Object Oriented Programming concepts such as polymorphism and a singleton pattern. 
+    </p>
+</div><div class="project-div">
+    <img class="project-img" src="./assets/chess.png">
+    <h3>Chess</h3>
+    <h4>December 2022</h4>
+    <p class="project-p">
+        My Chess project was built as a final project for Foundational Programming Concept and Design (CSCI200).
+        The user interface built in the terminal and displays each sides captured pieces, the board, a move list, whose turn it is, and a prompt to enter the next move.
+        Moves are entered by entering the square of the piece you are moving and then the square it is moving to (Algebraic notation was not added due to time constraints).
+        Move validation is implemented and includes rules such as promotion, castling, 2 square first pawn moves, and check/checkmate detection.
+        If an invalid move is entered it will tell the user that their move was invalid and prompt them to enter a new move.
+    </p>
+    <a target="_blank" class="navbar-button" href="https://github.com/ggarzia17/ChessProject">Source Code</a>
+</div>
+    </main>
+    <footer class="parent border">
+      <a target="_blank" class="footer-anchor" href="https://www.linkedin.com/in/gavingarzia/">
+        <img class="footer-img" src="./assets/linkedin.png"/>
+      </a>
+      <a target="_blank" class="footer-anchor" href="https://github.com/ggarzia17">
+        <img class="footer-img" class="footer-anchor" src="./assets/github.png"/>
+      </a>
+      <a target="_blank" class="footer-anchor" href="mailto:ggarzia@mines.edu">
+        <img class="footer-img" class="footer-anchor" src="./assets/email.png"/>
+      </a>
+      <h5 class="footer-text">Created using html and css and hosted on Github Pages</h5>
+    </footer>
+  </body>
+</html>

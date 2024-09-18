@@ -41,8 +41,17 @@ body {
     padding: 3px 10px;
     text-decoration: none;
     color: var(--alt-text-color);
-    margin: 0.5em;
+    margin: 7px;
 }
+
+div.navbar .navbar-button:hover {
+    transform: scale(1.07, 1.11);
+}
+div.project-div .navbar-button:hover {
+    padding: 4px 12px;
+
+}
+
 
 .navbar {
     display: flex;
@@ -102,4 +111,12 @@ footer {
 
 .project-p {
     min-width: 300px;
+}
+
+.body-anchor {
+    text-decoration: none;
+}
+
+.p-link {
+    color: rgb(51, 145, 255);
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gavin Garzia</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/favicon.jpeg" type="image/x-icon">
     <script src="./src/js/prism.js"></script>
 
   </head>
@@ -15,10 +15,10 @@
       <h1>Gavin Garzia</h1>
       <h4>Computer Science Student</h4>
       <div class="navbar">
-        <a class="navbar-button" href="index">Home</a>
+        <a class="navbar-button" href="index.html">Home</a>
         <!-- <a class="navbar-button" href="work.html">Work Experience</a> -->
-        <a class="navbar-button" href="projects">Projects</a>
-        <a class="navbar-button" href="blog">Blog</a>
+        <a class="navbar-button" href="projects.html">Projects</a>
+        <a class="navbar-button" href="blog.html">Blog</a>
         <a target="_blank" 
           class="navbar-button" 
           href="resume.pdf" 

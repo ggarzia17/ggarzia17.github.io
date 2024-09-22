@@ -30,9 +30,9 @@ body {
 }
 
 .border {
-    border-top-width: 10px;
-    border-top: solid;
-    border-top-color: var(--misc-color);
+    border-bottom-width: 10px;
+    border-bottom: solid;
+    border-bottom-color: var(--misc-color);
 }
 
 .navbar-button {

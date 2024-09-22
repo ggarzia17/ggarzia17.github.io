@@ -1,0 +1,6 @@
+<div class="project-div">
+    <h2>:TITLE:</h2>
+    <h3>:DATE:</h3>
+    <p>:DESC:</p>
+    <a href="./:FILE:" class="navbar-button">Read</a>
+</div>  

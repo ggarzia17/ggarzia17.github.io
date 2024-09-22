@@ -1,6 +1,6 @@
 
     </main>
-    <footer class="parent border">
+    <footer class="parent">
       <a target="_blank" class="footer-anchor" href="https://www.linkedin.com/in/gavingarzia/">
         <img class="footer-img" src="./assets/linkedin.png"/>
       </a>

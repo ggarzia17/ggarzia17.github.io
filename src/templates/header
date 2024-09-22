@@ -11,7 +11,7 @@
 
   </head>
   <body>
-    <header class="parent header">
+    <header class="parent header border">
       <h1>Gavin Garzia</h1>
       <h4>Computer Science Student</h4>
       <div class="navbar">
@@ -26,5 +26,5 @@
           >Resume</a>
       </div>
     </header>
-    <main class="parent border">
+    <main class="parent">
         

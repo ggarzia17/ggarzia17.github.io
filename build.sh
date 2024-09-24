@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #get resume file
-cp ../../latex/resume/resume.pdf .
+cp ../../latex/resume/resume.pdf files/
 
 #index
 cd src

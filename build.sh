@@ -10,7 +10,7 @@ cat templates/header index.html templates/footer > ../index.html
 
 # posts
 cd posts
-echo "building posts"
+echo "building post pages"
 for file in `ls | sort -k9`; do
     # get title of file and create blog post html file
     title=${file:11:-5}
@@ -39,9 +39,17 @@ for file in `ls | sort -k9`; do
     echo "</div>" >> ../../blog.tmp
 done
 
+#Experience
+cd ../experience
+echo "building work experience page"        
+for file in `ls | sort -k9  -r`; do
+    echo "<div class=\"border\">" >> ../../experience.tmp
+    cat $file >> ../../experience.tmp
+    echo "</div>" >> ../../experience.tmp
+done
 #projects
 cd ../projects
-echo "building projects"        
+echo "building projects page"        
 for file in `ls | sort -k9  -r`; do
     echo "<div class=\"border\">" >> ../../projects.tmp
     cat $file >> ../../projects.tmp
@@ -51,5 +59,6 @@ done
 cd ../../
 cat ./src/templates/header blog.tmp ./src/templates/footer > blog.html
 cat ./src/templates/header projects.tmp ./src/templates/footer > projects.html
+cat ./src/templates/header experience.tmp ./src/templates/footer > work.html
 
 rm *.tmp

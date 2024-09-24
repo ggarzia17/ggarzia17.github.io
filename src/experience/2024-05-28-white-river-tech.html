@@ -1,0 +1,33 @@
+<div class="project-div">
+    <img class="project-img" src="assets/wrt.png">
+    <h2>Engineering Intern</h2>
+    <h3><a target="_blank" class="p-link" href="https://whiterivertech.com/index.html">White River Technologies</a> &#x2022 Lebonan NH</h3>
+    <h4>May 2024 - August 2024</h4>
+    <p class="project-p">
+        White River Technologies is a small research and development firm that specializes in geophysical sensors. 
+        My main role was developing software to aid their electromagnetic sensor systems.
+        Over the summer I completed several notable projects. 
+    </p>
+    <p class="project-p">
+        I developed script to configure Windows tablets for deployment with electromagnetic sensor system.
+        This included installing necessary software to monitor EM data, changing network settings so the tablet could connect to the EM sensor, and setting up OpenSSH server to ensure remote access while device was in the field.
+    </p>
+    <p class="project-p">
+        I designed and implemented a <a target="_blank" class="p-link" href="https://wiki.python.org/moin/PyQt">PyQT</a>
+        GUI to provide a user friendly way to plan drone and underwater robot survey paths and output it to several different file formats.
+        The GUI included an integrated <a target="_blank" class="p-link" href="https://leafletjs.com/">leaflet.js</a> map that could either use map tiles from the internet or allow the user to provide their own for offline use 
+        This GUI replaced the existing method of copying the coordinates manually into the code which was highly error prone.
+    </p>
+    <p class="project-p">
+        I developed a GUI to modify the configuration file for their EM sensor systems and change the hardware settings.
+        After changing the hardware settings the program read back the EM data stream and parsed it to ensure that the hardware settings were actually changed.
+        This allowed them to not let clients have access to the configuration file which allowed them to restrict which values the clients can actually modify.
+    </p>
+    <p class="project-p">
+        I enhanced their quality control GUI by adding functionality to manipulate different geographic file formats.
+        The functionality allowed for conversion between 
+        <a class="p-link" target="_blank" href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/shapefiles/what-is-a-shapefile.htm">.shp</a> and 
+        <a class="p-link" target="_blank" href="https://paulbourke.net/dataformats/ply/">.ply</a> files and merging of multiple .ply files.
+        I also parsed the coordinate reference system data from each file format to ensure that converted files were in the same <a href="https://www.usgs.gov/media/images/mapping-utm-grid-conterminous-48-united-states" class="p-link" target="_blank">UTM zone</a>
+    </p>
+</div>

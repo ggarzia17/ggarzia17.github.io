@@ -73,6 +73,10 @@ div.project-div .navbar-button:hover {
     margin: 1.5%;
 }
 
+.footer-img:hover {
+    transform: scale(1.25);
+}
+
 .sourceCode {
     background-color: var(--back-color);
     border-radius: 10px;

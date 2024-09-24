@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gavin Garzia</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/favicon.jpeg" type="image/x-icon">
+    <script src="./src/js/prism.js"></script>
+
+  </head>
+  <body>
+    <header class="parent header border">
+      <h1>Gavin Garzia</h1>
+      <h4>Computer Science Student</h4>
+      <div class="navbar">
+        <a class="navbar-button" href="index.html">Home</a>
+        <a class="navbar-button" href="work.html">Work Experience</a>
+        <a class="navbar-button" href="projects.html">Projects</a>
+        <a class="navbar-button" href="blog.html">Blog</a>
+        <a target="_blank" 
+          class="navbar-button" 
+          href="resume.pdf" 
+          title="Gavin Garzia's Resume"
+          >Resume</a>
+      </div>
+    </header>
+    <main class="parent">
+        <div class="border">
+<div class="project-div">
+    <img class="project-img" src="assets/wrt.png">
+    <h2>Engineering Intern</h2>
+    <h3><a target="_blank" class="p-link" href="https://whiterivertech.com/index.html">White River Technologies</a> &#x2022 Lebonan NH</h3>
+    <h4>May 2024 - August 2024</h4>
+    <p class="project-p">
+        White River Technologies is a small research and development firm that specializes in geophysical sensors. 
+        My main role was developing software to aid their electromagnetic sensor systems.
+        Over the summer I completed several notable projects. 
+    </p>
+    <p class="project-p">
+        I developed script to configure Windows tablets for deployment with electromagnetic sensor system.
+        This included installing necessary software to monitor EM data, changing network settings so the tablet could connect to the EM sensor, and setting up OpenSSH server to ensure remote access while device was in the field.
+    </p>
+    <p class="project-p">
+        I designed and implemented a <a target="_blank" class="p-link" href="https://wiki.python.org/moin/PyQt">PyQT</a>
+        GUI to provide a user friendly way to plan drone and underwater robot survey paths and output it to several different file formats.
+        The GUI included an integrated <a target="_blank" class="p-link" href="https://leafletjs.com/">leaflet.js</a> map that could either use map tiles from the internet or allow the user to provide their own for offline use 
+        This GUI replaced the existing method of copying the coordinates manually into the code which was highly error prone.
+    </p>
+    <p class="project-p">
+        I developed a GUI to modify the configuration file for their EM sensor systems and change the hardware settings.
+        After changing the hardware settings the program read back the EM data stream and parsed it to ensure that the hardware settings were actually changed.
+        This allowed them to not let clients have access to the configuration file which allowed them to restrict which values the clients can actually modify.
+    </p>
+    <p class="project-p">
+        I enhanced their quality control GUI by adding functionality to manipulate different geographic file formats.
+        The functionality allowed for conversion between 
+        <a class="p-link" target="_blank" href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/shapefiles/what-is-a-shapefile.htm">.shp</a> and 
+        <a class="p-link" target="_blank" href="https://paulbourke.net/dataformats/ply/">.ply</a> files and merging of multiple .ply files.
+        I also parsed the coordinate reference system data from each file format to ensure that converted files were in the same <a href="https://www.usgs.gov/media/images/mapping-utm-grid-conterminous-48-united-states" class="p-link" target="_blank">UTM zone</a>
+    </p>
+</div></div>
+<div class="border">
+<div class="project-div">
+    <img class="project-img" src="">
+    <h2>Trash Removal &#x2022 Lawn Care</h2>
+    <h3>Service Central &#x2022 Andover NH</h3>
+    <h4>May 2023 - August 2023 &#x2022 May 2024 - August 2024</h4>
+    <p class="project-p">
+        Service Central is a company started by my friend.
+        They do many different things such as lawn care, trash removal, snow removal, painting, and several others.
+        I mostly worked doing lawn care and trash removal.
+        This included weedwacking, building planters, mulching, filling driveway potholes, cleaning out garages and attics, trimming bushes, and safely disposing of large items such as mattresses and drywall sheets.
+    </p>
+</div></div>
+<div class="border">
+<div class="project-div">
+    <img class="project-img" src="./assets/tuckers.png">
+    <h2>Prep/Line Cook</h2>
+    <h3><a class="p-link" target="_blank" href="https://www.tuckersnh.com/">Tucker's</a> &#x2022 New London NH</h3>
+    <h4>July 2021 - August 2022</h4>
+    <p class="project-p">
+        As a prep cook I was responsible for completing a list of prep tasks each day.
+        I demonstrated proficiency in operating kitchen equipment such as meat slicers, knives, and food processors.
+        Additionally, I learned how to adhere to strict food safety standards and maintain kitchen cleanliness.
+        I was regularly praised for my efficiency in preparing their many different recipes.
+    </p>
+    <p class="project-p">
+        As a line cook I was responsible for preparing food to be served to the customers.
+        I learned how to work on a team with the other cooks to ensure meals were served to customers in a timely matter without sacrificing quality of food.
+        I also had to communicate with other cooks to organize and complete orders and minimize delays for the customer.
+    </p>
+</div></div>
+<div class="border">
+<div class="project-div">
+    <img class="project-img" src="./assets/refinery.png">
+    <h2>Prep/Line Cook</h2>
+    <h3><a class="p-link" target="_blank" href="https://www.refinerynh.com/">The Refinery</a> &#x2022 Andover NH</h3>
+    <h4>June 2020 - July 2021 &#x2022  May 2022 - August 2022 &#x2022  May 2023 - August 2023</h4>
+    <p class="project-p">
+        Started as a dishwasher in June 2020, and was moved up to a cook doing both prep and line work.
+        As a prep cook I was responsible for ensuring the kitchen was well stocked for the line cooks.
+        I demonstrated proficiency in operating kitchen equipment such as meat slicers, knives, and cooking tools.
+        Additionally, I learned how to adhere to strict food safety standards and maintain kitchen cleanliness.
+        I was regularly praised for my efficiency in preparing their many different recipes.
+    </p>
+    <p class="project-p">
+        As a line cook I was responsible for preparing food to be served to the customers.
+        I learned how to work on a team with the other cooks to ensure meals were served to customers in a timely matter without sacrificing quality of food.
+        I also had to communicate with other cooks to organize and complete orders and minimize delays for the customer.
+    </p>
+</div></div>
+
+    </main>
+    <footer class="parent">
+      <a target="_blank" class="footer-anchor" href="https://www.linkedin.com/in/gavingarzia/">
+        <img class="footer-img" src="./assets/linkedin.png"/>
+      </a>
+      <a target="_blank" class="footer-anchor" href="https://github.com/ggarzia17">
+        <img class="footer-img" class="footer-anchor" src="./assets/github.png"/>
+      </a>
+      <a target="_blank" class="footer-anchor" href="mailto:ggarzia@mines.edu">
+        <img class="footer-img" class="footer-anchor" src="./assets/email.png"/>
+      </a>
+      <h5 class="footer-text">Created using html and css and hosted on Github Pages</h5>
+    </footer>
+  </body>
+</html>

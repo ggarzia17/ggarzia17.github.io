@@ -21,7 +21,7 @@
         <a class="navbar-button" href="blog.html">Blog</a>
         <a target="_blank" 
           class="navbar-button" 
-          href="assets/resume.pdf" 
+          href="files/resume.pdf" 
           title="Gavin Garzia's Resume"
           >Resume</a>
       </div>

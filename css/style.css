@@ -101,16 +101,13 @@ footer {
     margin-bottom: 100px;
     margin: 5px;
     float: right;
+    max-width: 300px; 
+    max-height: 380px;
+    object-fit: contain;
 }
 
 .project-div h3 {
     margin-top: 0;
-}
-
-.project-img {
-    max-width: 300px; 
-    max-height: 380px;
-    object-fit: contain;
 }
 
 .project-p {

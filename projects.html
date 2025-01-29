@@ -18,7 +18,7 @@
         <a class="navbar-button" href="index.html">Home</a>
         <a class="navbar-button" href="work.html">Work Experience</a>
         <a class="navbar-button" href="projects.html">Projects</a>
-        <a class="navbar-button" href="blog.html">Blog</a>
+        <!-- <a class="navbar-button" href="blog.html">Blog</a> -->
         <a target="_blank" 
           class="navbar-button" 
           href="files/resume.pdf" 
@@ -30,7 +30,21 @@
         
 <div class="border">
 <div class="project-div">
-    <img class="project-img" src="./assets/matrix.png">
+	<img width="800" src="./assets/traceroute.png">
+	<h2>Trace Route</h2>
+	<h3>November 2024</h3>
+	<p class="project-p">
+		This project was written in C++ using raw sockets to send network layer <a target="_blank" href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol">ICMP</a> echo requests.
+                The program sends packets with increasing TTLs until it receives a response from the device at the IP address provided to it or it has sent 30 packets total.
+                The program also listens for replies to its packets and reads their headers to see what type of packet they are.
+                If the reply is an Echo Reply then the program has reached its destination.
+                If the reply is a TTL Exceeded packet then the program knows that that device is a step along the route to the destination.
+                If the program does not receive a reply after a few seconds then it will timeout and send the next packet.
+	</p>
+</div></div>
+<div class="border">
+<div class="project-div">
+    <img src="./assets/matrix.png">
     <h2>Matrix Terminal Screensaver</h2>
     <h3>September 2024</h3>
     <p class="project-p">
@@ -42,7 +56,7 @@
 </div></div>
 <div class="border">
 <div class="project-div">
-    <img class="project-img" src="./assets/clue.png">
+    <img src="./assets/clue.png">
     <h2>Clue</h2>
     <h3>May 2024</h3>
     <p class="project-p">
@@ -62,11 +76,11 @@
 </div></div>
 <div class="border">
 <div class="project-div">
-    <img class="project-img" src="./assets/chess.png">
+    <img src="./assets/chess.png">
     <h2>Chess</h2>
     <h3>December 2022</h3>
     <p class="project-p">
-        My Chess project was built as a final project for Foundational Programming Concept and Design 
+        My Chess project was built as a final project for Foundational Programming Concepts and Design 
         (<a target="_blank" href="https://catalog.mines.edu/search/?P=CSCI200" class="p-link">CSCI200</a>).
         The user interface built in the terminal and displays each sides captured pieces, the board, a move list, whose turn it is, and a prompt to enter the next move.
         Moves are entered by entering the square of the piece you are moving and then the square it is moving to (Algebraic notation was not added due to time constraints).

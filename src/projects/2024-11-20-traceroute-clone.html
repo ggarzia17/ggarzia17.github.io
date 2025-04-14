@@ -3,11 +3,15 @@
 	<h2>Trace Route</h2>
 	<h3>November 2024</h3>
 	<p class="project-p">
-		This project was written in C++ using raw sockets to send network layer <a target="_blank" href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol">ICMP</a> echo requests.
-                The program sends packets with increasing TTLs until it receives a response from the device at the IP address provided to it or it has sent 30 packets total.
-                The program also listens for replies to its packets and reads their headers to see what type of packet they are.
-                If the reply is an Echo Reply then the program has reached its destination.
-                If the reply is a TTL Exceeded packet then the program knows that that device is a step along the route to the destination.
-                If the program does not receive a reply after a few seconds then it will timeout and send the next packet.
+		This project was written in C++ using raw sockets to send network layer 
+		<a target="_blank" href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol" class="p-link">ICMP</a> echo requests.
+		The program sends packets with increasing TTLs until it receives a response from the device at the IP address provided to it or it has sent 30 packets total.
+		The program also listens for replies to its packets and reads their headers to see what type of packet they are.
+		If the reply is an Echo Reply then the program has reached its destination.
+		If the reply is a TTL Exceeded packet then the program knows that that device is a step along the route to the destination.
+		If the program does not receive a reply after a few seconds then it will timeout and send the next packet.
 	</p>
+	<p class="project-p">
+        Mines wants this source code to be private from future students so code is availible upon request.
+    </p>
 </div>

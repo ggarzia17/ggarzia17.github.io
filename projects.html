@@ -30,17 +30,50 @@
         
 <div class="border">
 <div class="project-div">
+	<div>
+		<img width="800" src="./assets/guardian.ai-1.png">
+		<img width="800" src="./assets/guardian.ai-2.png">
+	</div>
+	<h2>Guardian.ai - Blasterhacks 2025 Winner</h2>
+	<h3>March 2025</h3>
+	<p class="project-p">
+		Guardian.ai is an emergency notification assistant that generates custom action plans for users based on their unique needs.
+		It allows the user to create a bio that can include any information that would be needed in case of an emergency.
+		Then Guardian.ai listens to multiple government hosted natural disaster APIs and analyzes the disaster to determine if it is a threat to the user.
+		If Guardian.ai detects a threat it will then use the users bio to generate a custom action plan that takes into account any information they included in their bio.
+		Guardian.ai will then notify the user via text and email that their is a potential disaster nearby and send them the action plan.
+	</p>
+	<p class="project-p">
+		The LLM model we used was <a target="_blank" href="https://www.llama.com/models/llama-3/" class="p-link">Llama 3-70b</a>, which was hosted by 
+		Groq on their Language Processing Unit (<a target="_blank" href="https://groq.com/inference/" class="p-link">LPU</a>) AI inference technology. 
+		We utilized the increased speed to implement realtime feedback when the user was creating a bio.
+		The LLM would notify the user about any information that could potentially be useful that they had not already added to their bio.
+	</p>
+	<p class="project-p">
+		The frontend was created using Svelte and Tailwind.
+		The backend was created using FastAPI and SQLite and was hosted on Docker.
+		I worked with <a target="_blank" href="https://www.bancell.dev" class="p-link">Brady Ancell</a> and Matias Pena to build Guardian.ai
+	</p>
+	<a target="_blank" class="navbar-button" href="https://github.com/matiasatu/EmergencyResponseAssistant">Source Code</a>
+	<a target="_blank" class="navbar-button" href="https://devpost.com/software/guardian-ai-vn71z0">Devpost</a>
+</div></div>
+<div class="border">
+<div class="project-div">
 	<img width="800" src="./assets/traceroute.png">
 	<h2>Trace Route</h2>
 	<h3>November 2024</h3>
 	<p class="project-p">
-		This project was written in C++ using raw sockets to send network layer <a target="_blank" href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol">ICMP</a> echo requests.
-                The program sends packets with increasing TTLs until it receives a response from the device at the IP address provided to it or it has sent 30 packets total.
-                The program also listens for replies to its packets and reads their headers to see what type of packet they are.
-                If the reply is an Echo Reply then the program has reached its destination.
-                If the reply is a TTL Exceeded packet then the program knows that that device is a step along the route to the destination.
-                If the program does not receive a reply after a few seconds then it will timeout and send the next packet.
+		This project was written in C++ using raw sockets to send network layer 
+		<a target="_blank" href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol" class="p-link">ICMP</a> echo requests.
+		The program sends packets with increasing TTLs until it receives a response from the device at the IP address provided to it or it has sent 30 packets total.
+		The program also listens for replies to its packets and reads their headers to see what type of packet they are.
+		If the reply is an Echo Reply then the program has reached its destination.
+		If the reply is a TTL Exceeded packet then the program knows that that device is a step along the route to the destination.
+		If the program does not receive a reply after a few seconds then it will timeout and send the next packet.
 	</p>
+	<p class="project-p">
+        Mines wants this source code to be private from future students so code is availible upon request.
+    </p>
 </div></div>
 <div class="border">
 <div class="project-div">
@@ -62,12 +95,12 @@
     <p class="project-p">
         This project was created as a group project with <a target="_blank" href="https://www.bancell.dev" class="p-link">Brady Ancell</a> for Software Engineering 
         (<a target="_blank" href="https://catalog.mines.edu/search/?P=CSCI306" class="p-link">CSCI306</a>).
-        The game logic was built in Java and the GUI was created using the 
+        The game was built with Java and the GUI was created using the 
         <a target="_blank" href="https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html" class="p-link">Java Swing</a> framework.
-        The game features all of the major rules of clue. 
-        One of the more interesting to implement was moving a player when another player made a suggestion including them, and then updating their valid moves accordingly.
+        The game implements all of the major rules of clue. 
+        One of the more interesting rules to code was moving a player when another player made a suggestion including them, and then updating their valid moves accordingly.
         For example if you end a turn in a room you are not allowed to guess there again unless you were moved there by another player.
-        While implementing Clue we utilized Object Oriented Programming concepts such as polymorphism and a singleton pattern.
+        While implementing Clue we utilized Object Oriented Programming concepts such as polymorphism and the singleton pattern.
         In order to ensure quality of code, we implemented tests for all features using the <a target="_blank" href="https://junit.org/junit5/" class="p-link">JUnit</a> framework.
     </p>
     <p class="project-p">

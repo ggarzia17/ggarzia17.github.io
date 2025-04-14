@@ -1,0 +1,28 @@
+<div class="project-div">
+	<div>
+		<img width="800" src="./assets/guardian.ai-1.png">
+		<img width="800" src="./assets/guardian.ai-2.png">
+	</div>
+	<h2>Guardian.ai - Blasterhacks 2025 Winner</h2>
+	<h3>March 2025</h3>
+	<p class="project-p">
+		Guardian.ai is an emergency notification assistant that generates custom action plans for users based on their unique needs.
+		It allows the user to create a bio that can include any information that would be needed in case of an emergency.
+		Then Guardian.ai listens to multiple government hosted natural disaster APIs and analyzes the disaster to determine if it is a threat to the user.
+		If Guardian.ai detects a threat it will then use the users bio to generate a custom action plan that takes into account any information they included in their bio.
+		Guardian.ai will then notify the user via text and email that their is a potential disaster nearby and send them the action plan.
+	</p>
+	<p class="project-p">
+		The LLM model we used was <a target="_blank" href="https://www.llama.com/models/llama-3/" class="p-link">Llama 3-70b</a>, which was hosted by 
+		Groq on their Language Processing Unit (<a target="_blank" href="https://groq.com/inference/" class="p-link">LPU</a>) AI inference technology. 
+		We utilized the increased speed to implement realtime feedback when the user was creating a bio.
+		The LLM would notify the user about any information that could potentially be useful that they had not already added to their bio.
+	</p>
+	<p class="project-p">
+		The frontend was created using Svelte and Tailwind.
+		The backend was created using FastAPI and SQLite and was hosted on Docker.
+		I worked with <a target="_blank" href="https://www.bancell.dev" class="p-link">Brady Ancell</a> and Matias Pena to build Guardian.ai
+	</p>
+	<a target="_blank" class="navbar-button" href="https://github.com/matiasatu/EmergencyResponseAssistant">Source Code</a>
+	<a target="_blank" class="navbar-button" href="https://devpost.com/software/guardian-ai-vn71z0">Devpost</a>
+</div>

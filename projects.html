@@ -59,13 +59,42 @@
 </div></div>
 <div class="border">
 <div class="project-div">
-	<img width="800" src="./assets/traceroute.png">
+    <div style="max-width: 250 !important;">
+        <img width="250" src="./assets/pacman1.png">
+        <img width="250" src="./assets/pacman2.png">
+    </div>
+	<h2>3D Pacman</h2>
+	<h3>December 2024</h3>
+	<p class="project-p">
+		This project was created as a final project for Computer Graphics
+        (<a href="https://catalog.mines.edu/search/?P=CSCI441" class="p-link" target="_blank">CSCI441</a>)
+        with Colton Morris and Henry Johnson. 
+        The project was written in C++ with the
+        <a class="p-link" href="https://www.opengl.org/" target="_blank">OpenGL</a> graphics library.
+        This was a 3D rendition of pacman that made it into a horror game where the ghosts are chasing you through a dungeon-like arena while you try to collect all of the lava spheres.
+        Once the player collects all of the spheres the level is reset and the enemies get faster.
+        However, if you take damage from the enemies you lose a life and your vision goes blurry. 
+        If you get hit 5 times then you lose and have to restart.
+    </p>
+    <p class="project-p">
+        We utilized GLSL shaders to add numerous effects including billboarding for the enemies using the geometry shader, 
+        Gourad Shading and texturing via the fragment shader, and bump mapping with the vertex shader.
+        Some other things we added were collision detection between the player and the walls, the enemies and the spheres,
+        a particle system when the player dies, and basic pathfinding for the enemies.
+    </p>
+	<a target="_blank" class="navbar-button" href="https://github.com/ggarzia17/3D-Pacman">Source Code</a>
+</div></div>
+<div class="border">
+<div class="project-div">
+	<img style="max-width: 800" width="800" src="./assets/traceroute2.png">
 	<h2>Trace Route</h2>
 	<h3>November 2024</h3>
 	<p class="project-p">
-		This project was written in C++ using raw sockets to send network layer 
-		<a target="_blank" href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol" class="p-link">ICMP</a> echo requests.
-		The program sends packets with increasing TTLs until it receives a response from the device at the IP address provided to it or it has sent 30 packets total.
+		This project was written for Computer Networks I
+		(<a class="p-link" href="https://catalog.mines.edu/search/?P=CSCI471" target="_blank">CSCI471</a>).
+		It was written in C++ using raw sockets to send network layer 
+		<a target="_blank" href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol" class="p-link">ICMP</a>
+		echo requests with increasing TTLs until it receives a response from the device at the IP address provided to it or it has sent 30 packets total.
 		The program also listens for replies to its packets and reads their headers to see what type of packet they are.
 		If the reply is an Echo Reply then the program has reached its destination.
 		If the reply is a TTL Exceeded packet then the program knows that that device is a step along the route to the destination.
@@ -77,7 +106,7 @@
 </div></div>
 <div class="border">
 <div class="project-div">
-    <img src="./assets/matrix.png">
+    <img src="./assets/matrix2.png">
     <h2>Matrix Terminal Screensaver</h2>
     <h3>September 2024</h3>
     <p class="project-p">
@@ -109,7 +138,7 @@
 </div></div>
 <div class="border">
 <div class="project-div">
-    <img src="./assets/chess.png">
+    <img src="./assets/chess2.png">
     <h2>Chess</h2>
     <h3>December 2022</h3>
     <p class="project-p">

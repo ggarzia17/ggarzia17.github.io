@@ -1,0 +1,23 @@
+<div class="project-div">
+    <img width="800" src="./assets/stockviz.png">
+	<h2>Terminal Stock Map</h2>
+	<h3>April 2025</h3>
+	<p class="project-p">
+		This is a terminal interface for the S&P500 <a href="https://finviz.com/map.ashx" class="p-link" target="_blank">stock map</a>.
+		It is written in Python with the 
+		<a href="https://yfinance-python.org/" class="p-link" target="_blank">yfinance</a> API 
+		and Go with the <a href="https://github.com/charmbracelet/bubbletea" class="p-link" target="_blank">bubbletea</a> library.
+    </p>
+	<p class="project-p">
+		The backend gathers the necessary data for the frontend by scraping Wikipedia's list of S&P500 companies and then querying the yfinance API to get price and market capitalization data.
+		This data is then packaged into a json file to be read in by the frontend.
+		Eventually this would be hosted on a server where it would run on a cron job.
+	</p>
+	<p class="project-p">
+		The frontend parses the json file from the backend and sorts the data by sector and then industry. 
+		Next the frontend runs the algorithm to fit the stocks into the space they need. 
+		The size of each stock/industry/sector is weighted by its market cap.
+		Because the terminal is relatively low resolution you can zoom in to a given sector and then industry to make them take up the full screen.
+	</p>
+	<a target="_blank" class="navbar-button" href="https://github.com/ggarzia17/stockviz">Source Code</a>
+</div>
